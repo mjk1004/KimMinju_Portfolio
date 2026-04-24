@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Style Transfer Image</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.11/lib/p5.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.11/lib/addons/p5.sound.min.js"></script>
+    <script src="https://unpkg.com/ml5@0.5.0/dist/ml5.min.js"></script>
+    <style> body {padding: 0; margin: 0;} canvas {vertical-align: top;} </style>
+  </head>
+
+  <body>
+    <p id="statusMsg">Loading Models...</p>
+    <button id="transferBtn">Transfer!</button>
+
+    <p>Input Image:</p>
+   
+    <img src="images/Beachy Head, East Sussex, England, UK.jpeg" alt="input img" id="inputImg" />
+
+    <div id="styleA">
+      <p>
+        Style A:
+        <a href="https://en.wikipedia.org/wiki/The_Great_Wave_off_Kanagawa"
+          >The Great Wave off Kanagawa, 1829 - Katsushika Hokusai</a
+        >
+      </p>
+      <img src="images/wave.jpg" alt="style one" />
+    </div>
+
+    <div id="styleB">
+      <p>
+        Style B:
+        <a href="https://en.wikipedia.org/wiki/Udnie"
+          >Udnie (Young American Girl, The Dance), 1913 - Francis Picabia</a
+        >
+      </p>
+      <img src="images/udnie.jpg" alt="style two" />
+    </div>
+
+    <script src="sketch.js"></script>
+  </body>
+</html>

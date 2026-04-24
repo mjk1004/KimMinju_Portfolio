@@ -1,0 +1,2 @@
+// --002 (I chose this code because the repetition and overlap of shapes looked interesting)
+i=0;function setup(){createCanvas(1200,900)}function draw(){for(j=0;j<50;)circle(i++%(1199-j++),int(i/50)%(999-j),i%30,j%30)}
